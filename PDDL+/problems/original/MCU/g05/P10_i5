@@ -1,0 +1,118 @@
+(define (problem example)
+(:domain paco3d)
+(:objects L1 L2 L3 L4 L5 L6 L7 L8 L9 L10 - link
+
+xyaxes ZAXES - axis
+)
+(:init
+
+(= (speed-i) 10)
+(= (speed-d) 10)
+(= (speed-g) 0.5)
+
+(= (angle L1 xyaxes) 0.1)
+(= (angle L1 ZAXES) 162.2)
+(= (angle L2 xyaxes) 325.8)
+(= (angle L2 ZAXES) 216.5)
+(= (angle L3 xyaxes) 250.9)
+(= (angle L3 ZAXES) 93.9)
+(= (angle L4 xyaxes) 335.3)
+(= (angle L4 ZAXES) 284.5)
+(= (angle L5 xyaxes) 137.8)
+(= (angle L5 ZAXES) 142.7)
+(= (angle L6 xyaxes) 271.2)
+(= (angle L6 ZAXES) 256.7)
+(= (angle L7 xyaxes) 234.2)
+(= (angle L7 ZAXES) 227.1)
+(= (angle L8 xyaxes) 78.4)
+(= (angle L8 ZAXES) 333.8)
+(= (angle L9 xyaxes) 99.5)
+(= (angle L9 ZAXES) 11.7)
+(= (angle L10 xyaxes) 324.0)
+(= (angle L10 ZAXES) 344.4)
+
+(freeToMove L1) 
+(freeToMove L2) 
+(freeToMove L3) 
+(freeToMove L4) 
+(freeToMove L5) 
+(freeToMove L6) 
+(freeToMove L7) 
+(freeToMove L8) 
+(freeToMove L9) 
+(freeToMove L10) 
+
+(connected L1 L2 )
+(connected L2 L3 )
+(connected L3 L4 )
+(connected L4 L5 )
+(connected L5 L6 )
+(connected L6 L7 )
+(connected L7 L8 )
+(connected L8 L9 )
+(connected L9 L10 )
+
+
+(affects L2 L3 )
+(affects L2 L4 )
+(affects L2 L5 )
+(affects L2 L6 )
+(affects L2 L7 )
+(affects L2 L8 )
+(affects L2 L9 )
+(affects L2 L10 )
+(affects L3 L4 )
+(affects L3 L5 )
+(affects L3 L6 )
+(affects L3 L7 )
+(affects L3 L8 )
+(affects L3 L9 )
+(affects L3 L10 )
+(affects L4 L5 )
+(affects L4 L6 )
+(affects L4 L7 )
+(affects L4 L8 )
+(affects L4 L9 )
+(affects L4 L10 )
+(affects L5 L6 )
+(affects L5 L7 )
+(affects L5 L8 )
+(affects L5 L9 )
+(affects L5 L10 )
+(affects L6 L7 )
+(affects L6 L8 )
+(affects L6 L9 )
+(affects L6 L10 )
+(affects L7 L8 )
+(affects L7 L9 )
+(affects L7 L10 )
+(affects L8 L9 )
+(affects L8 L10 )
+(affects L9 L10 )
+)
+
+(:goal (and
+
+
+
+
+(> (angle L3 xyaxes) 199.4)
+(> (angle L3 ZAXES) 125.9)
+
+
+(> (angle L5 xyaxes) 68.6)
+(> (angle L5 ZAXES) 89.0)
+
+
+(> (angle L7 xyaxes) 178.2)
+(> (angle L7 ZAXES) 83.1)
+
+
+(> (angle L9 xyaxes) 65.3)
+(> (angle L9 ZAXES) 286.2)
+
+
+(< (angle L3 xyaxes) 247.3)
+
+) )
+)

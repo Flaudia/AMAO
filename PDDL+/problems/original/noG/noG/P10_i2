@@ -1,0 +1,118 @@
+(define (problem example)
+(:domain paco3d)
+(:objects L1 L2 L3 L4 L5 L6 L7 L8 L9 L10 - link
+
+xyaxes ZAXES - axis
+)
+(:init
+
+(= (speed-i) 10)
+(= (speed-d) 10)
+
+(= (angle L1 xyaxes) 29.1)
+(= (angle L1 ZAXES) 176.5)
+(= (angle L2 xyaxes) 271.7)
+(= (angle L2 ZAXES) 347.7)
+(= (angle L3 xyaxes) 276.3)
+(= (angle L3 ZAXES) 150.8)
+(= (angle L4 xyaxes) 59.5)
+(= (angle L4 ZAXES) 29.8)
+(= (angle L5 xyaxes) 166.8)
+(= (angle L5 ZAXES) 305.7)
+(= (angle L6 xyaxes) 201.3)
+(= (angle L6 ZAXES) 354.8)
+(= (angle L7 xyaxes) 222.4)
+(= (angle L7 ZAXES) 11.6)
+(= (angle L8 xyaxes) 0.8)
+(= (angle L8 ZAXES) 292.3)
+(= (angle L9 xyaxes) 46.8)
+(= (angle L9 ZAXES) 79.7)
+(= (angle L10 xyaxes) 347.1)
+(= (angle L10 ZAXES) 264.4)
+
+(freeToMove L1) 
+(freeToMove L2) 
+(freeToMove L3) 
+(freeToMove L4) 
+(freeToMove L5) 
+(freeToMove L6) 
+(freeToMove L7) 
+(freeToMove L8) 
+(freeToMove L9) 
+(freeToMove L10) 
+
+(connected L1 L2 )
+(connected L2 L3 )
+(connected L3 L4 )
+(connected L4 L5 )
+(connected L5 L6 )
+(connected L6 L7 )
+(connected L7 L8 )
+(connected L8 L9 )
+(connected L9 L10 )
+
+
+(affects L2 L3 )
+(affects L2 L4 )
+(affects L2 L5 )
+(affects L2 L6 )
+(affects L2 L7 )
+(affects L2 L8 )
+(affects L2 L9 )
+(affects L2 L10 )
+(affects L3 L4 )
+(affects L3 L5 )
+(affects L3 L6 )
+(affects L3 L7 )
+(affects L3 L8 )
+(affects L3 L9 )
+(affects L3 L10 )
+(affects L4 L5 )
+(affects L4 L6 )
+(affects L4 L7 )
+(affects L4 L8 )
+(affects L4 L9 )
+(affects L4 L10 )
+(affects L5 L6 )
+(affects L5 L7 )
+(affects L5 L8 )
+(affects L5 L9 )
+(affects L5 L10 )
+(affects L6 L7 )
+(affects L6 L8 )
+(affects L6 L9 )
+(affects L6 L10 )
+(affects L7 L8 )
+(affects L7 L9 )
+(affects L7 L10 )
+(affects L8 L9 )
+(affects L8 L10 )
+(affects L9 L10 )
+)
+
+(:goal (and
+
+
+
+
+(> (angle L3 xyaxes) 164.4)
+(> (angle L3 ZAXES) 65.9)
+
+
+(> (angle L5 xyaxes) 83.3)
+(> (angle L5 ZAXES) 308.7)
+
+
+(> (angle L7 xyaxes) 208.9)
+(> (angle L7 ZAXES) 174.7)
+
+
+(> (angle L9 xyaxes) 9.6)
+(> (angle L9 ZAXES) 269.0)
+
+
+(< (angle L4 xyaxes) 289.7)
+
+
+) )
+)

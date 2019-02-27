@@ -1,0 +1,130 @@
+(define (problem example)
+(:domain paco3d)
+(:objects L1 L2 L3 L4 L5 L6 L7 L8 L9 L10 - link
+
+xyaxes ZAXES - axis
+)
+(:init
+
+(vertical ZAXES)
+
+(= (speed-i) 10)
+(= (speed-d) 10)
+(= (speed-g) 1)
+
+(= (angle L1 xyaxes) 336.9)
+(= (angle L1 ZAXES) 200.5)
+(= (angle L2 xyaxes) 160.2)
+(= (angle L2 ZAXES) 126.7)
+(= (angle L3 xyaxes) 53.7)
+(= (angle L3 ZAXES) 91.3)
+(= (angle L4 xyaxes) 283.2)
+(= (angle L4 ZAXES) 208.8)
+(= (angle L5 xyaxes) 17.9)
+(= (angle L5 ZAXES) 322.6)
+(= (angle L6 xyaxes) 209.8)
+(= (angle L6 ZAXES) 227.0)
+(= (angle L7 xyaxes) 324.6)
+(= (angle L7 ZAXES) 177.3)
+(= (angle L8 xyaxes) 246.0)
+(= (angle L8 ZAXES) 311.1)
+(= (angle L9 xyaxes) 122.9)
+(= (angle L9 ZAXES) 66.5)
+(= (angle L10 xyaxes) 28.0)
+(= (angle L10 ZAXES) 105.3)
+
+(freeToMove L1) 
+(freeToMove L2) 
+(freeToMove L3) 
+(freeToMove L4) 
+(freeToMove L5) 
+(freeToMove L6) 
+(freeToMove L7) 
+(freeToMove L8) 
+(freeToMove L9) 
+(freeToMove L10) 
+
+(connected L1 L2 )
+(connected L2 L3 )
+(connected L3 L4 )
+(connected L4 L5 )
+(connected L5 L6 )
+(connected L6 L7 )
+(connected L7 L8 )
+(connected L8 L9 )
+(connected L9 L10 )
+
+(fake L1)
+(fake L2)
+(fake L3)
+(fake L4)
+(fake L5)
+(fake L6)
+(fake L7)
+(fake L8)
+(fake L9)
+(fake L10)
+
+(affects L2 L3 )
+(affects L2 L4 )
+(affects L2 L5 )
+(affects L2 L6 )
+(affects L2 L7 )
+(affects L2 L8 )
+(affects L2 L9 )
+(affects L2 L10 )
+(affects L3 L4 )
+(affects L3 L5 )
+(affects L3 L6 )
+(affects L3 L7 )
+(affects L3 L8 )
+(affects L3 L9 )
+(affects L3 L10 )
+(affects L4 L5 )
+(affects L4 L6 )
+(affects L4 L7 )
+(affects L4 L8 )
+(affects L4 L9 )
+(affects L4 L10 )
+(affects L5 L6 )
+(affects L5 L7 )
+(affects L5 L8 )
+(affects L5 L9 )
+(affects L5 L10 )
+(affects L6 L7 )
+(affects L6 L8 )
+(affects L6 L9 )
+(affects L6 L10 )
+(affects L7 L8 )
+(affects L7 L9 )
+(affects L7 L10 )
+(affects L8 L9 )
+(affects L8 L10 )
+(affects L9 L10 )
+)
+
+(:goal (and
+
+
+
+
+(> (angle L3 xyaxes) 322.3)
+(> (angle L3 ZAXES) 13.4)
+
+
+(> (angle L5 xyaxes) 25.3)
+(> (angle L5 ZAXES) 321.8)
+
+
+(> (angle L7 xyaxes) 57.0)
+(> (angle L7 ZAXES) 277.5)
+
+
+(> (angle L9 xyaxes) 203.1)
+(> (angle L9 ZAXES) 143.3)
+
+
+(< (angle L9 xyaxes) 262.6)
+
+) )
+)

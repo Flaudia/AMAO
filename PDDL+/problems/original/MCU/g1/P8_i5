@@ -1,0 +1,92 @@
+(define (problem example)
+(:domain paco3d)
+(:objects L1 L2 L3 L4 L5 L6 L7 L8 - link
+
+xyaxes ZAXES - axis
+)
+(:init
+
+(= (speed-i) 10)
+(= (speed-d) 10)
+(= (speed-g) 1)
+
+(= (angle L1 xyaxes) 246.9)
+(= (angle L1 ZAXES) 29.4)
+(= (angle L2 xyaxes) 41.2)
+(= (angle L2 ZAXES) 357.0)
+(= (angle L3 xyaxes) 333.0)
+(= (angle L3 ZAXES) 291.6)
+(= (angle L4 xyaxes) 121.2)
+(= (angle L4 ZAXES) 19.0)
+(= (angle L5 xyaxes) 350.5)
+(= (angle L5 ZAXES) 219.2)
+(= (angle L6 xyaxes) 142.5)
+(= (angle L6 ZAXES) 225.9)
+(= (angle L7 xyaxes) 180.2)
+(= (angle L7 ZAXES) 149.3)
+(= (angle L8 xyaxes) 116.2)
+(= (angle L8 ZAXES) 2.8)
+
+(freeToMove L1) 
+(freeToMove L2) 
+(freeToMove L3) 
+(freeToMove L4) 
+(freeToMove L5) 
+(freeToMove L6) 
+(freeToMove L7) 
+(freeToMove L8) 
+
+(connected L1 L2 )
+(connected L2 L3 )
+(connected L3 L4 )
+(connected L4 L5 )
+(connected L5 L6 )
+(connected L6 L7 )
+(connected L7 L8 )
+
+
+(affects L2 L3 )
+(affects L2 L4 )
+(affects L2 L5 )
+(affects L2 L6 )
+(affects L2 L7 )
+(affects L2 L8 )
+(affects L3 L4 )
+(affects L3 L5 )
+(affects L3 L6 )
+(affects L3 L7 )
+(affects L3 L8 )
+(affects L4 L5 )
+(affects L4 L6 )
+(affects L4 L7 )
+(affects L4 L8 )
+(affects L5 L6 )
+(affects L5 L7 )
+(affects L5 L8 )
+(affects L6 L7 )
+(affects L6 L8 )
+(affects L7 L8 )
+)
+
+(:goal (and
+
+
+
+
+(> (angle L3 xyaxes) 269.6)
+(> (angle L3 ZAXES) 119.2)
+
+
+(> (angle L5 xyaxes) 227.7)
+(> (angle L5 ZAXES) 45.9)
+
+
+(> (angle L7 xyaxes) 182.6)
+(> (angle L7 ZAXES) 242.8)
+
+
+
+(< (angle L5 xyaxes) 308.9)
+
+) )
+)

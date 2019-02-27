@@ -1,0 +1,12 @@
+[submodule "DiNo"]
+	path = DiNo
+	url = https://github.com/KCL-Planning/DiNo.git
+[submodule "PDDL+/the-enhsp-planner"]
+	path = PDDL+/the-enhsp-planner
+	url = https://bitbucket.org/enricode/the-enhsp-planner
+[submodule "PDDL+/UPMurphi"]
+	path = PDDL+/UPMurphi
+	url = https://github.com/gdellapenna/UPMurphi.git
+[submodule "PDDL+/DiNo"]
+	path = PDDL+/DiNo
+	url = https://github.com/KCL-Planning/DiNo.git

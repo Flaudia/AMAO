@@ -10,3 +10,9 @@
 [submodule "PDDL+/DiNo"]
 	path = PDDL+/DiNo
 	url = https://github.com/KCL-Planning/DiNo.git
+[submodule "UPMurphi"]
+	path = UPMurphi
+	url = https://github.com/gdellapenna/UPMurphi.git
+[submodule "the-enhsp-planner"]
+	path = the-enhsp-planner
+	url = https://bitbucket.org/enricode/the-enhsp-planner
